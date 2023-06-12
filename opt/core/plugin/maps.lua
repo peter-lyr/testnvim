@@ -101,7 +101,7 @@ vim.keymap.set({ 't', 'c', }, 'QO', '<cr>')
 
 -- f5
 
-vim.keymap.set({ 'n', 'v' }, '<f5>', '<cmd>:e!<cr>', { silent = true })
+vim.keymap.set({ 'n', 'v' }, '<f5>', ':<c-u>e!<cr>', { silent = true })
 
 -- mouse
 
