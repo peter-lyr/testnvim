@@ -1,4 +1,6 @@
 {
+  "diffview.nvim": { "branch": "main", "commit": "397ce240d3141b97067049fa3544f974d8b4d06d" },
+  "nvim-web-devicons": { "branch": "master", "commit": "2a125024a137677930efcfdf720f205504c97268" },
   "tokyonight.nvim": { "branch": "main", "commit": "161114bd39b990995e08dbf941f6821afbdcd666" },
   "vim-startuptime": { "branch": "master", "commit": "454b3de856b7bd298700de33d79774ca9b9e3875" }
 }

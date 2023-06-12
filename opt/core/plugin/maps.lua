@@ -28,9 +28,6 @@ vim.keymap.set({ 'c', 'i' }, '<a-v>', '<c-r>"')
 vim.keymap.set({ 't',     }, '<a-v>', '<c-\\><c-n>pi')
 vim.keymap.set({ 'c', 'i' }, '<a-=>', '<c-r>+')
 vim.keymap.set({ 't',     }, '<a-=>', '<c-\\><c-n>"+pi')
-vim.keymap.set({ 'n', 'v' }, '<a-z>', '"zy')
-vim.keymap.set({ 'c', 'i' }, '<a-z>', '<c-r>z')
-vim.keymap.set({ 't',     }, '<a-z>', '<c-\\><c-n>"zpi')
 
 vim.keymap.set({ 'n', 'v' }, '<leader>y', '<esc>:let @+ = expand("%:t")<cr>')
 vim.keymap.set({ 'n', 'v' }, '<leader>gy', '<esc>:let @+ = substitute(nvim_buf_get_name(0), "/", "\\\\", "g")<cr>')
@@ -68,6 +65,9 @@ vim.keymap.set('v', '<c-h>', 'H')
 vim.keymap.set('v', '<c-g>', 'G')
 vim.keymap.set('v', '<c-m>', 'M')
 vim.keymap.set('v', '<c-u>', 'U')
+vim.keymap.set('v', '<c-e>', 'E')
+vim.keymap.set('v', '<c-w>', 'W')
+vim.keymap.set('v', '<c-b>', 'B')
 
 -- esc
 
@@ -87,9 +87,21 @@ vim.keymap.set({ 'i', 'c' }, '<a-m>', '<esc><esc>')
 vim.keymap.set({ 't',     }, '<esc>', '<c-\\><c-n>')
 vim.keymap.set({ 't',     }, '<a-m>', '<c-\\><c-n>')
 
+-- enter
+
+vim.keymap.set( 'i', 'qo', '<esc>o')
+vim.keymap.set( 'i', 'Qo', '<esc>o')
+vim.keymap.set( 'i', 'qO', '<esc>o')
+vim.keymap.set( 'i', 'QO', '<esc>o')
+
+vim.keymap.set({ 't', 'c', }, 'qo', '<cr>')
+vim.keymap.set({ 't', 'c', }, 'Qo', '<cr>')
+vim.keymap.set({ 't', 'c', }, 'qO', '<cr>')
+vim.keymap.set({ 't', 'c', }, 'QO', '<cr>')
+
 -- f5
 
-vim.keymap.set({ 'n', 'v' }, '<f5>', '<cmd>:e!<cr>', { silent = true })
+vim.keymap.set({ 'n', 'v' }, '<f5>', ':<c-u>e!<cr>', { silent = true })
 
 -- mouse
 
