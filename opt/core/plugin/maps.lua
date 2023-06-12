@@ -87,6 +87,18 @@ vim.keymap.set({ 'i', 'c' }, '<a-m>', '<esc><esc>')
 vim.keymap.set({ 't',     }, '<esc>', '<c-\\><c-n>')
 vim.keymap.set({ 't',     }, '<a-m>', '<c-\\><c-n>')
 
+-- enter
+
+vim.keymap.set( 'i', 'qo', '<esc>o')
+vim.keymap.set( 'i', 'Qo', '<esc>o')
+vim.keymap.set( 'i', 'qO', '<esc>o')
+vim.keymap.set( 'i', 'QO', '<esc>o')
+
+vim.keymap.set({ 't', 'c', }, 'qo', '<cr>')
+vim.keymap.set({ 't', 'c', }, 'Qo', '<cr>')
+vim.keymap.set({ 't', 'c', }, 'qO', '<cr>')
+vim.keymap.set({ 't', 'c', }, 'QO', '<cr>')
+
 -- f5
 
 vim.keymap.set({ 'n', 'v' }, '<f5>', '<cmd>:e!<cr>', { silent = true })
