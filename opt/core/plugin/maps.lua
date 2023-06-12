@@ -73,10 +73,10 @@ vim.keymap.set('v', '<c-b>', 'B')
 
 vim.keymap.set('v', 'm', '<esc>')
 
-vim.keymap.set({ 'i', 'c', }, 'ql', '<esc><esc>')
-vim.keymap.set({ 'i', 'c', }, 'qL', '<esc><esc>')
-vim.keymap.set({ 'i', 'c', }, 'Ql', '<esc><esc>')
-vim.keymap.set({ 'i', 'c', }, 'QL', '<esc><esc>')
+vim.keymap.set({ 'v', 'i', 'c', }, 'ql', '<esc><esc>')
+vim.keymap.set({ 'v', 'i', 'c', }, 'qL', '<esc><esc>')
+vim.keymap.set({ 'v', 'i', 'c', }, 'Ql', '<esc><esc>')
+vim.keymap.set({ 'v', 'i', 'c', }, 'QL', '<esc><esc>')
 
 vim.keymap.set( 't', 'ql', '<c-\\><c-n>')
 vim.keymap.set( 't', 'qL', '<c-\\><c-n>')
