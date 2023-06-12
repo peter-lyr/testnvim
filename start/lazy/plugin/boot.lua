@@ -35,14 +35,14 @@ lazy.setup({
   performance = {
     rtp = {
       disabled_plugins = {
-        -- "gzip",
-        -- "matchit",
-        -- "matchparen",
-        -- "netrwPlugin", -- already rm runtime netrw
-        -- "tarPlugin",
+        "gzip",
+        "matchit",
+        "matchparen",
+        "netrwPlugin",
+        "tarPlugin",
         "tohtml",
         "tutor",
-        -- "zipPlugin",
+        "zipPlugin",
       },
     },
   },
