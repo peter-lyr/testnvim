@@ -65,6 +65,9 @@ vim.keymap.set('v', '<c-h>', 'H')
 vim.keymap.set('v', '<c-g>', 'G')
 vim.keymap.set('v', '<c-m>', 'M')
 vim.keymap.set('v', '<c-u>', 'U')
+vim.keymap.set('v', '<c-e>', 'E')
+vim.keymap.set('v', '<c-w>', 'W')
+vim.keymap.set('v', '<c-b>', 'B')
 
 -- esc
 
